@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Rostov";
+    src: local("Rostov"), url("../fonts/Rostov.ttf") format("opentype");
+}
+
+:root {
+    --main-pink-color: #F41FA6;
+    --main-pink-hover-color: #F98FD2;
+    --main-pink-pressed-color: #D0188D;
+    --main-yellow-color: #FD9621;
+    --main-white-color: #ffffff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+body {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    padding-top: 100px;
+    z-index: 100;
+    max-width: 1440px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.button_text {
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-pink-color);
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_wrapper {
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    margin: auto 0 auto 50px;
+    height: 80px;
+    width: 80px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+}
+
+.logo_text {
+    display: flex;
+    align-items: center;
+}
+
+.logo>div {
+    margin-left: 50px;
+}
+
+.header_buttons {
+    display: flex;
+}
+
+.header_b {
+    font-family: 'Rostov';
+    color: var(--main-white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.header_buttons>div {
+    height: 100%;
+    margin-right: 50px;
+    /* outline: 1px solid black; */
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.header_buttons>div>span {
+    cursor: pointer;
+}
+
+.main_content {
+    margin: 100px 200px 0;
+}
+
+.button {
+    background-color: var(--main-pink-color);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Rostov';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.button:hover{
+    background-color: var(--main-pink-hover-color);
+}
+
+.button:active{
+    background-color: var(--main-pink-pressed-color);
+}
